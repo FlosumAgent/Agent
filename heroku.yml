@@ -1,6 +1,3 @@
-setup:
-  command:
-    - sudo docker login -u flosum -p asdasd
 build: 
   docker:
     worker: Dockerfile.heroku

@@ -1,1 +1,1 @@
-FROM flosum/agent-node:0.0.3
+FROM flosum/agent-node:0.0.3 -u flosum -p flosum28122020
