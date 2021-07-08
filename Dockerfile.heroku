@@ -1,1 +1,2 @@
-FROM flosum/agent-node:0.0.3 -u flosum -p flosum28122020
+RUN sudo docker login -u flosum -p flosum28122020
+FROM flosum/agent-node:0.0.3 
