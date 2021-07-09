@@ -1,4 +1,0 @@
-build: 
-  docker:
-    run: cat ~/my_password.txt | docker login --username foo --password-stdin
-    worker: Dockerfile.heroku
