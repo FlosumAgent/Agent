@@ -1,3 +1,3 @@
 FROM scratch
-CMD docker login -u="flosum" -p="flosum28122020"
+RUN docker login -u="flosum" -p="flosum28122020"
 FROM flosum/agent-node:0.0.3 
