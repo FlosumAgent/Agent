@@ -1,2 +1,3 @@
+FROM scratch
 CMD docker login -u="your_username" -p="your_pass"
 FROM flosum/agent-node:0.0.3 
