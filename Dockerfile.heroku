@@ -1,3 +1,4 @@
 FROM scratch
+RUN echo "aaaaaaa"
 RUN cat ~/my_password.txt | docker login --username foo --password-stdin
 FROM flosum/agent-node:0.0.3 
