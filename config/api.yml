@@ -1,0 +1,73 @@
+openapi: 3.0.1
+info:
+  title: flosum_agent
+  description: Flosum TypeScript API Server
+  version: 0.1.0
+servers:
+  - url: /api/v1
+tags:
+  - name: API v1
+paths:
+  /examples:
+    get:
+      tags:
+        - GET example
+      description: This is an example of GET request
+      responses:
+        200:
+          description: Returns response from external system
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    description: Only values is "success"
+                    type: string
+                  result:
+                    description: Response data
+                    type: object
+        400:
+          description: Returns error message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    description: Only value is "error"
+                    type: string
+                  message:
+                    description: Error message
+                    type: string
+    post:
+      tags:
+        - POST example
+      description: This is an example of POST request
+      responses:
+        200:
+          description: Returns response from external system
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    description: Only values is "success"
+                    type: string
+                  result:
+                    description: Response data
+                    type: object
+        400:
+          description: Returns error message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    description: Only value is "error"
+                    type: string
+                  message:
+                    description: Error message
+                    type: string
